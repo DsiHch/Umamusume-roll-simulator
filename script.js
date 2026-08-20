@@ -747,7 +747,7 @@ function showRollResult(kitasanPulled, rCards, srCards, ssrCards, pullCount = 50
                 message = `💔 No SSRs this time...`;
             }
         } else {
-            message = `😐 ${ssrCards} SSR${ssrCards > 1 ? 's' : ''} but no Kitasan Black...`;
+            message = `😐 ${ssrCards} SSR${ssrCards > 1 ? 's' : ''} but no Featured SSR...`;
             // Show SR info only for small pulls (20 or less)
             if (pullCount <= 20 && srCards > 0) {
                 message += ` Also got ${srCards} SR${srCards > 1 ? 's' : ''}!`;
@@ -761,9 +761,9 @@ function showRollResult(kitasanPulled, rCards, srCards, ssrCards, pullCount = 50
     } else if (percentileValue <= 25) {
         // Bad luck (bottom 25%)
         if (kitasanPulled === 1) {
-            message = `😐 Got 1 Kitasan Black!`;
+            message = `😐 Got 1 Featured SSR!`;
         } else {
-            message = `😐 Got ${kitasanPulled} Kitasan Blacks!`;
+            message = `😐 Got ${kitasanPulled} Featured SSRs!`;
         }
         // Show SR info only for small pulls (20 or less)
         if (pullCount <= 20 && srCards > 0) {
@@ -772,9 +772,9 @@ function showRollResult(kitasanPulled, rCards, srCards, ssrCards, pullCount = 50
     } else if (percentileValue <= 75) {
         // Average luck (25th-75th percentile)
         if (kitasanPulled === 1) {
-            message = `🙂 Got 1 Kitasan Black!`;
+            message = `🙂 Got 1 Featured SSR!`;
         } else {
-            message = `🙂 Got ${kitasanPulled} Kitasan Blacks!`;
+            message = `🙂 Got ${kitasanPulled} Featured SSRs!`;
         }
         // Show SR info only for small pulls (20 or less)
         if (pullCount <= 20 && srCards > 0) {
@@ -783,9 +783,9 @@ function showRollResult(kitasanPulled, rCards, srCards, ssrCards, pullCount = 50
     } else if (percentileValue <= 90) {
         // Good luck (75th-90th percentile)
         if (kitasanPulled === 1) {
-            message = `😊 Got 1 Kitasan Black! Good luck!`;
+            message = `😊 Got 1 Featured SSR! Good luck!`;
         } else {
-            message = `🎉 Got ${kitasanPulled} Kitasan Blacks! Good luck!`;
+            message = `🎉 Got ${kitasanPulled} Featured SSRs! Good luck!`;
         }
         // Show SR info only for small pulls (20 or less)
         if (pullCount <= 20 && srCards > 0) {
@@ -794,9 +794,9 @@ function showRollResult(kitasanPulled, rCards, srCards, ssrCards, pullCount = 50
     } else if (percentileValue <= 99) {
         // Very lucky (90th-99th percentile)
         if (kitasanPulled === 1) {
-            message = `🌟 Got 1 Kitasan Black! Very lucky!`;
+            message = `🌟 Got 1 Featured SSR! Very lucky!`;
         } else {
-            message = `🌟 Amazing! ${kitasanPulled} Kitasan Blacks!`;
+            message = `🌟 Amazing! ${kitasanPulled} Featured SSRs!`;
         }
         // Show SR info only for small pulls (20 or less)
         if (pullCount <= 20 && srCards > 0) {
@@ -804,14 +804,14 @@ function showRollResult(kitasanPulled, rCards, srCards, ssrCards, pullCount = 50
         }
     } else if (percentileValue <= 99.9) {
         // Extremely lucky (99th-99.9th percentile)
-        message = `✨ INCREDIBLE! ${kitasanPulled} Kitasan Black${kitasanPulled > 1 ? 's' : ''}!`;
+        message = `✨ INCREDIBLE! ${kitasanPulled} Featured SSR${kitasanPulled > 1 ? 's' : ''}!`;
         // Show SR info only for small pulls (20 or less)
         if (pullCount <= 20 && srCards > 0) {
             message += ` Also got ${srCards} SR${srCards > 1 ? 's' : ''}!`;
         }
     } else {
         // Legendary luck (99.9th+ percentile)
-        message = `🎆 LEGENDARY! ${kitasanPulled} Kitasan Black${kitasanPulled > 1 ? 's' : ''}!`;
+        message = `🎆 LEGENDARY! ${kitasanPulled} Featured SSR${kitasanPulled > 1 ? 's' : ''}!`;
         // Show SR info only for small pulls (20 or less)
         if (pullCount <= 20 && srCards > 0) {
             message += ` Also got ${srCards} SR${srCards > 1 ? 's' : ''}!`;
