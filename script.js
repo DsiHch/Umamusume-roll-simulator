@@ -158,7 +158,8 @@ async function getCardFolders() {
         '30016-super-creek', '30017-smart-falcon', '30018-nishino-flower', 
         '30020-biko-pegasus', '30021-tazuna-hayakawa', '30024-oguri-cap',
         '30026-twin-turbo', '30027-mejiro-palmer', '30028-kitasan-black', '30029-satono-diamond', '30030-fenomeno', '30031-jungle-pocket', 
-        '30032-narita-top-road', '30033-katsuragi-ace'
+        '30032-narita-top-road', '30033-katsuragi-ace', '30034-tamamo-cross', '30035-orfevre', '30036-stay-gold', '30037-nakayama-festa', 
+        '30038-vodka', '30039-dantsu-flame', '30040-aston-machan'
     ];
 }
 
