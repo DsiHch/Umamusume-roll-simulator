@@ -157,7 +157,7 @@ async function getCardFolders() {
         '30011-ines-fujin', '30012-winning-ticket', '30013-air-shakur', '30014-gold-city', '30015-sakura-bakushin-o',
         '30016-super-creek', '30017-smart-falcon', '30018-nishino-flower', 
         '30020-biko-pegasus', '30021-tazuna-hayakawa', '30024-oguri-cap',
-        '30026-twin-turbo', '30027-mejiro-palmer', '30028-kitasan-black', '30029-satono-diamond'
+        '30026-twin-turbo', '30027-mejiro-palmer', '30028-kitasan-black', '30029-satono-diamond', '30030-fenomeno'
     ];
 }
 
