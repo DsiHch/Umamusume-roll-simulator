@@ -665,7 +665,7 @@ function performRoll() {
                     addCardToInventory(selectedCard, true, pullCount, ssrCardsThisRoll);
                     
                     // Check if it's Kitasan Black specifically
-                    if (selectedCard.id === '30031-jungle-pocket', '30032-narita-top-road') {
+                    if (selectedCard.id === '30031-jungle-pocket') {
                         kitasanPulled++;
                         totalKitasanCount++;
                     }
